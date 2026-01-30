@@ -39,7 +39,7 @@ function tip_setup() {
     tips[9]="Your data is precious. Watch who you give it to.";
     tips[10]="Keep your code simple and readable.";
     tips[11]="Arduino is the source of all simple real-life applications - use it.";
-    tips[12]="If your code has bugs, then first do what you can to figure stuff out. Take a break. Then come back. If you can figure it out, than then, and only then, you ask people for help.";
+    tips[12]="If your code has bugs, then first do what you can to figure stuff out. Take a break. Then come back. If you still can't figure it out, than then, and only then, you ask people for help.";
     tips[13]="Think before you allow admin access.";
     tips[14]="Deleting something is not deleting it. It's simply moving it. If you want to delete something for good, press Shift-Delete. Or just get rid of the recycle bin.";
     tips[15]="If your problem is small, don't bother other people with your stupid questions. Figure it out yourself.";
