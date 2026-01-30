@@ -1,0 +1,190 @@
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #03182d;
+    color: #FFFFFF;
+    margin-top: -20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+header img {
+    justify-content: right;
+}
+
+img.small {
+    float:left;
+    height: 50px;
+    width: 50px;
+}
+
+img.medium {
+    float:left;
+    height: 70px;
+    width: 70px;
+    align-self: center;
+}
+
+img.large {
+    float: left;
+    height: 150px;
+    width: 150px;
+    align-self: center;
+}
+
+img.xlarge {
+    float: right;
+    height: 150px;
+    width: 150px;
+    align-self: center;
+}
+
+div {
+    .container {
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .box {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+        opacity: 0;
+        transition: opacity 1.5s ease;
+        max-width: 100%;
+    }
+
+    .box.visible {
+        opacity: 1;
+    }
+
+    .box2 {
+        max-width: fit-content;
+        border: 1px solid #000000;
+        padding: 15px;
+        margin-right: 10px;
+    }
+
+    .right {
+        display: none;
+    }
+
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #03182d;
+    margin-top: -21px;
+}
+
+nav a {
+    color: #FFFFFF;
+    font-family: arial;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: xx-large;
+    padding: 16px;
+    border-bottom: 1px #FFFFFF dashed;
+    text-align: center;
+    body { margin: 0px; } 
+}
+
+nav a:last-child {
+    border-bottom: none;
+}
+
+nav a:hover,
+nav a:active
+    { background-color: #bcbdbf;}
+
+@media screen and (min-width: 600px) {
+    nav {
+        justify-content: right;
+        flex-direction: row;
+    }
+
+    nav a {
+        border: none;
+        border-right: 1px #FFFFFF dashed;
+    }
+
+    nav a:last-child {
+        border-right: none;
+    }
+
+    div {
+        .box {
+            max-width: 70%;
+        }
+
+        .right {
+            display: none;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    div {
+        .right {
+            display: inline;
+            float: right;
+            border: 2px dotted #FFFFFF;
+            max-width: 20%;
+            padding: 10px;
+            background-color: #03182d;
+            color: #FFFFFF;
+            margin-right: 10px;
+        }
+        .right a {
+            color:#FFFFFF;
+        }        
+    }
+
+    img.xlarge {
+        float: right;
+        height: 250px;
+        width: 250px;
+        align-self: center;
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    img.xlarge {
+        float: right;
+        height: 300px;
+        width: 300px;
+        align-self: center;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    div {
+        .box {
+            max-width: 100%;
+        }
+    }    
+}
+
+@media print {
+    header {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    button {
+        display: none;
+    }
+}
